@@ -14,10 +14,21 @@ public class HelloControllerTest {
 
     @Test
     public void testHello() {
-
         // Act
         String response = controller.hello();
         // Assert
         assertEquals("Hello World!", response);
+    }
+
+
+    @Test
+    public void testOhm(){
+        // Act
+        int res = controller.wow(8, 2);
+
+        // Assert
+        assertEquals(10,res);
+        // Assert
+        assertEquals(2+3,controller.wow(2,3));
     }
 }
